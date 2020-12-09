@@ -4,11 +4,6 @@
 
 @tailwind utilities;
 
-html,
-body {
-	scroll-behavior: smooth;
-}
-
 :root {
 	--theme-primary: theme('colors.green.900');
 	--theme-secondary: theme('colors.green.500');

@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-		"start": "next start",
-		"lint:fix": "eslint --fix"
-	},
-	"husky": {
+    "start": "next start",
+    "lint:fix": "eslint --fix"
+  },
+  "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
@@ -19,14 +19,17 @@
     ]
   },
   "dependencies": {
+    "axios": "^0.21.0",
+    "classnames": "^2.2.6",
+    "framer-motion": "^2.9.5",
     "next": "10.0.3",
+    "nprogress": "^0.2.0",
     "react": "17.0.1",
-		"react-dom": "17.0.1",
-		"classnames": "^2.2.6",
-		"framer-motion": "^2.9.5",
-		"nprogress": "^0.2.0"
-	},
-	"devDependencies": {
+    "react-dom": "17.0.1",
+    "react-query": "^2.26.4",
+    "react-query-devtools": "^2.6.3"
+  },
+  "devDependencies": {
     "@babel/core": "^7.12.7",
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.2.0",
