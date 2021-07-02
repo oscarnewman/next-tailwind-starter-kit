@@ -5,8 +5,10 @@ module.exports = {
 		defaultLineHeights: true,
 		standardFontWeights: true,
 	},
+	mode: 'jit',
+	darkMode: 'media',
 	purge: {
-		content: ['./src/**/*.html', './src/**/*.tsx'],
+		content: ['./src/**/*.html', './src/**/*.{tsx,html,js,jsx}'],
 		options: {
 			safelist: {
 				standard: [/space-(x|y)-.+/],
@@ -32,9 +34,6 @@ module.exports = {
 				full: '100%',
 			},
 		},
-	},
-	variants: {
-		borderWidth: ['hover'],
 	},
 	plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 }
